@@ -1,0 +1,10 @@
+{% extends 'users/html/base.html' %}
+
+{% block Title %}
+    {{ request.user }}
+{% endblock %}
+
+{% block content %}
+    <h1>Hello {{handle}}!</h1>
+    <h1>Total submissions - {{Count}}</h1>
+{% endblock %}
